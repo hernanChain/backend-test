@@ -1,0 +1,15 @@
+@hostname = http://localhost:4000
+###
+POST {{hostname}}/product
+Content-Type: application/json
+
+{
+    "name":"AlMENdRas",
+    "value": 2000
+}
+
+###
+POST {{hostname}}/tax
+
+###
+POST {{hostname}}/range
