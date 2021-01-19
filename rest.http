@@ -1,5 +1,6 @@
 @hostname = http://localhost:4000
-###
+### Create a new product, 
+### Sending data in json format inside body request with name and value properties.
 POST {{hostname}}/product
 x-application-id : pradma12345
 Content-Type: application/json
@@ -9,7 +10,8 @@ Content-Type: application/json
     "value": 2000
 }
 
-###
+### Create a new tax, 
+### Sending data in json format inside body request with name and product_id properties.
 POST {{hostname}}/tax
 x-application-id : pradma12345
 Content-Type: application/json
@@ -19,7 +21,8 @@ Content-Type: application/json
     "product_id":17
 }
 
-###
+### Create a new range of taxes, 
+### Sending data in json format inside body request with name and value properties.
 POST {{hostname}}/range
 x-application-id : pradma12345
 Content-Type: application/json
@@ -31,6 +34,7 @@ Content-Type: application/json
     "tax_id": 9
 }
 
-###
+### Calculate, return an generate the product value with taxes included
+### Sending the product code (product_id) in route as param.
 GET {{hostname}}/calculate/15
 x-application-id : pradma12345

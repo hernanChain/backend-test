@@ -3,6 +3,14 @@ const ProductModel = require('./models/product');
 const TaxModel = require('./models/tax');
 const RangeTaxModel = require('./models/range_tax');
 
+/* 
+Database configuration, notice the followinng values.
+
+pragma_db: Databse name
+root: Database user
+secret: User password 
+*/
+
 const sequelize = new Sequelize('pragma_db', 'root', 'secret', {
   host: 'localhost',
   port: 33060,
