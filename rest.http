@@ -1,15 +1,36 @@
 @hostname = http://localhost:4000
 ###
 POST {{hostname}}/product
+x-application-id : pradma12345
 Content-Type: application/json
 
 {
-    "name":"AlMENdRas",
-    "value": 2000
+    "name":"Cellphone",
+    "value": 60000
 }
 
 ###
 POST {{hostname}}/tax
+x-application-id : pradma12345
+Content-Type: application/json
+
+{
+    "name":"Aranceles",
+    "product_id":17
+}
 
 ###
 POST {{hostname}}/range
+x-application-id : pradma12345
+Content-Type: application/json
+
+{
+    "start": 3501,
+    "end": 10000,
+    "value": 80,
+    "tax_id": 9
+}
+
+###
+GET {{hostname}}/calculate/15
+x-application-id : pradma12345
