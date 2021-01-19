@@ -5,8 +5,8 @@ x-application-id : pradma12345
 Content-Type: application/json
 
 {
-    "name":"Cellphone",
-    "value": 60000
+    "name":"Headphones",
+    "value": 2000
 }
 
 ###
